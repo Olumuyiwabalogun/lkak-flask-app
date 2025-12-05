@@ -1,0 +1,12 @@
+/* Basic styles and hero carousel Ken Burns effect */
+.hero { height: 70vh; overflow: hidden; position: relative; }
+#hero-container { height: 100%; position: relative; }
+.hero-item {
+position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transition: opacity 1s ease, transform 12s ease;
+}
+.hero-item.active { opacity: 1; transform: scale(1.06); }
+.hero-overlay { position: absolute; bottom: 20%; left: 8%; color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.6); max-width: 50%; }
+
+
+/* Simple responsive tweaks */
+@media (max-width: 768px){ .hero-overlay{ max-width: 90%; left: 5%; } }
