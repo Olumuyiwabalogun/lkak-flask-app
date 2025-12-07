@@ -135,6 +135,7 @@ python-memcached==1.59
 python-redis-lock==3.7.0
 pytz==2025.2
 PyYAML==5.1.1
+python-dotenv
 qrcode==6.1
 ratelim==0.1.6
 raven==6.10.0
