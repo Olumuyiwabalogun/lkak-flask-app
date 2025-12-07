@@ -1,0 +1,15 @@
+# Virtual Environment
+venv/
+*.env
+
+# Python compiled files and cache
+__pycache__/
+*.pyc
+
+# Database and local state
+instance/
+.flaskenv
+
+# OS generated files
+.DS_Store
+Thumbs.db
