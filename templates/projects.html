@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Projects</h1>
+<div class="row">
+{% for p in projects %}
+<div class="col-md-6 mb-4">
+<div class="project">
+<img src="{{ p.image_url or url_for('static', filename='images/placeholder.jpg') }}" class="img-fluid mb-2">
+<h4>{{ p.title }}</h4>
+<p>{{ p.summary }}</p>
+</div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
